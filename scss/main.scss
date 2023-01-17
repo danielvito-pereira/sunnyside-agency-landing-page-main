@@ -1,1 +1,120 @@
 @import 'imports/variavies' , 'imports/mixins' , 'imports/reset' ;
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../src/images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .nav{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        .ul{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: .125rem;
+            .li{
+                padding:1em 2em 1em 2em;
+                border-radius:50px;
+                cursor: pointer;
+                transition: all 1s ease-out;
+                &:hover{
+                  background-color:rgb(12, 9, 9);
+                  transition: 1s ease;
+                  transition: all 1s ease-out;
+                }
+            }
+            .btn{
+                padding:1em 2em 1em 2em;
+                border-radius:50px;
+                cursor: pointer;
+                transition: all 1s ease-out;
+                &:hover{
+                  background-color:rgb(12, 9, 9);
+                  transition: 1s ease;
+                  transition: all 1s ease-out;
+                }
+            }
+        }
+    }
+    .banner{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      height: 20vh;
+      .title{
+        font-size: 3em;
+        font-family: var(--tipo-secundario);
+      }
+    }
+}
+.main{
+  background-color:red;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  .sections{
+    width: 100%;
+    max-width: 120rem;
+    background-color:var(--white);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    .bloco{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .text{
+        width: 70%;
+        gap: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        .h2{
+          font-size:4em;
+          font-weight: 700;
+          line-height: 1em;
+          font-family: var(--tipo-secundario);
+        }
+      }
+    }
+  }
+  .sections.-reverse{
+    flex-flow: row-reverse nowrap;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

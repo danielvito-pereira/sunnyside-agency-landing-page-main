@@ -9,7 +9,30 @@
   --marcado       : rgb(127, 195, 255);
 
   /* Tipografía */
-  --tipo-principal  : Helvetica, Arial, sans-serif;
+  --tipo-principal  : 'Barlow', sans-serif;
+  --tipo-secundario :'Fraunces', serif;
+
+
+
+
+
+  /*Primary*/
+
+  --Softred: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Darkdesaturatedcyan: hsl(167, 40%, 24%);
+  --Darkblue: hsl(198, 62%, 26%);
+  --Darkmoderatecyan: hsl(168, 34%, 41%);
+  
+  /*Neutral*/
+  
+  --verydarkdesaturatedblue: hsl(212, 27%, 19%);
+  --Verydarkgrayishblue: hsl(213, 9%, 39%);
+  --Darkgrayishblue: hsl(232, 10%, 55%);
+  --Grayishblue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+  
+
 }
   
 
