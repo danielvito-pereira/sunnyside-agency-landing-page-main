@@ -131,59 +131,93 @@ body {
 }
 
 .header {
-  height: 100vh;
   width: 100%;
-  background-image: url("../src/images/desktop/image-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header .nav {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
+  height: 100vh;
+  gap: 5.625rem;
+  background-color: #393939;
+  color: #fff;
   padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-image: url(../src/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.header .nav .ul {
+.header .header-menu {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   justify-content: space-between;
-  gap: 0.125rem;
+  align-items: center;
 }
-.header .nav .ul .li {
-  padding: 1em 2em 1em 2em;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 1s ease-out;
-}
-.header .nav .ul .li:hover {
-  background-color: rgb(12, 9, 9);
-  transition: 1s ease;
-  transition: all 1s ease-out;
-}
-.header .nav .ul .btn {
-  padding: 1em 2em 1em 2em;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 1s ease-out;
-}
-.header .nav .ul .btn:hover {
-  background-color: rgb(12, 9, 9);
-  transition: 1s ease;
-  transition: all 1s ease-out;
+.header .title {
+  font-size: 5em;
+  font-family: var(--tipo-secundario);
+  letter-spacing: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
 }
 .header .banner {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1em;
-  height: 20vh;
+  flex-flow: column nowrap;
 }
-.header .banner .title {
-  font-size: 3em;
-  font-family: var(--tipo-secundario);
+.header .banner::after {
+  content: url(../src/images/icon-arrow-down.svg);
+  margin-top: 12%;
+}
+
+.header .a {
+  padding: 1em;
+}
+
+.header .button {
+  display: none;
+  cursor: pointer;
+}
+
+.header .svg {
+  width: 2em;
+  height: 2em;
+  fill: white;
+}
+
+.header .nav {
+  width: 100%;
+}
+
+.header .ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.header .li {
+  padding: 0 1em 0 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 1s ease-out;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.header .li:hover {
+  color: var(--verydarkdesaturatedblue);
+  background-color: var(--white);
+  transition: 1s ease;
+  transition: all 1s ease-out;
+}
+
+.mobile-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main {
@@ -205,7 +239,7 @@ body {
 .main .sections .bloco {
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 .main .sections .bloco .text {
@@ -222,10 +256,231 @@ body {
   line-height: 1em;
   font-family: var(--tipo-secundario);
 }
+.main .sections .bloco.-b1 {
+  background-image: url(../src/images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 80vh;
+}
+.main .sections .bloco.-b2 {
+  background-image: url(../src/images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 80vh;
+}
+.main .sections .bk-text {
+  width: 90%;
+  text-align: center;
+  gap: 1.125rem;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 5em;
+}
+.main .sections .bk-text .h2 {
+  font-size: 1em;
+}
 .main .sections.-reverse {
   flex-flow: row-reverse nowrap;
 }
+.main .client {
+  flex-flow: column nowrap;
+  padding: 10em 0 10em 0;
+  gap: 75px;
+}
+.main .client .sub-title {
+  font-family: var(--tipo-principal);
+  color: var(--Verydarkgrayishblue);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.main .client .feedback {
+  width: 90%;
+  gap: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.main .client .feedback .comments {
+  display: flex;
+  gap: 3.125rem;
+  width: 90%;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.main .client .feedback .comments .pessoa {
+  border-radius: 50%;
+  min-width: 20%;
+  max-width: 30%;
+}
+.main .client .feedback .comments .pessoa img {
+  border-radius: 50%;
+}
+.main .client .feedback .comments .p {
+  font-family: var(--tipo-principal);
+  text-align: center;
+  color: var(--Verydarkgrayishblue);
+}
+.main .client .feedback .comments .cargo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.main .photos {
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: var(--Darkmoderatecyan);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  justify-content: center;
+}
+.main .photos .fotos {
+  background-color: rgb(15, 207, 31);
+}
+.main .photos .fotos img {
+  width: 100%;
+  height: 100%;
+}
 
+.footer {
+  background-color: var(--Darkmoderatecyan);
+  width: 100%;
+  padding: 3em 0 3em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer .logo {
+  fill: var(--Darkdesaturatedcyan) !important;
+}
+.footer .central {
+  width: 100%;
+  gap: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer .central .footer-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer .central .footer-menu .a {
+  color: var(--Darkdesaturatedcyan);
+  padding: 0em 1em 0em 1em;
+}
+.footer .central .redes {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer .central .redes .a {
+  padding: 1em;
+}
+
+@media screen and (max-width: 988px) {
+  .header {
+    background-image: url(../src/images/mobile/image-header.jpg);
+  }
+  .header .header-menu {
+    flex-flow: column nowrap;
+  }
+  .header .button {
+    display: block;
+  }
+  .header .nav { /*quando o botão não estiver ativo */
+    width: 100%;
+    /* display: none;*/
+    pointer-events: none; /*para não ter efeito no mouse*/
+    height: 0vh;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    right: -397px;
+  }
+  .header .nav.activo { /*quando o botão estiver ativo */
+    /*para suavizar o efeito apenas retirei a altura e depois adicionei com um transition */
+    /*display: block;*/
+    width: 95%;
+    height: 50vh;
+    pointer-events: auto;
+    background-color: var(--white);
+    margin-top: 2em;
+    position: relative;
+    right: 0;
+  }
+  .header .nav.activo::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 26px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 32px solid rgb(255, 255, 255);
+    top: -28px;
+    left: 91%;
+    display: block;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .ul {
+    flex-direction: column;
+    opacity: 0;
+    color: var(--Darkgrayishblue);
+  }
+  .header .nav.activo .ul {
+    opacity: 1;
+  }
+  .btn {
+    background-color: var(--Yellow);
+    color: var(--verydarkdesaturatedblue);
+  }
+}
+@media screen and (max-width: 988px) {
+  .header .title {
+    font-size: 1em;
+  }
+  .main .sections {
+    flex-flow: column nowrap;
+  }
+  .main .sections .bloco {
+    width: 100%;
+  }
+  .main .sections .bloco .text {
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+  }
+  .main .sections .bloco.-b1 {
+    background-image: url(../src/images/mobile/image-graphic-design.jpg);
+  }
+  .main .sections .bloco.-b2 {
+    background-image: url(../src/images/mobile/image-photography.jpg);
+  }
+  .main .sections.-reverse, .main .sections.-r {
+    flex-flow: column-reverse nowrap;
+  }
+  .main .client .feedback {
+    flex-flow: column nowrap;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
