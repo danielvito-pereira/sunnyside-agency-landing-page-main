@@ -6,15 +6,12 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 - [Overview](#overview)
   - [O desafio](#o-desafio)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [Captura de tela](#Capturadetela)
+- [Meu Processo](#Meu-processo)
+  - [Construído com](#Construído-com)
+  - [O que eu aprendi](#Oque-eu-aprendi)
+  - [Desenvolvimento contínuo](#Desenvolvimento-contínuo)
+
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -54,12 +51,7 @@ Use esta seção para delinear as áreas nas quais você deseja continuar focand
 
 **Observação: exclua esta observação e o conteúdo desta seção e substitua por seus próprios planos para o desenvolvimento contínuo.**
 
-### Recursos Úteis
 
-- [Exemplo de recurso 1](https://www.example.com) - Isso me ajudou pelo motivo XYZ. Eu realmente gostei desse padrão e vou usá-lo daqui para frente.
-- [Exemplo de recurso 2](https://www.example.com) - Este é um artigo incrível que me ajudou a finalmente entender XYZ. Recomendo a todos que ainda estão aprendendo esse conceito.
-
-**Observação: exclua esta observação e substitua a lista acima pelos recursos que o ajudaram durante o desafio. Isso pode ser útil para qualquer pessoa que esteja visualizando sua solução ou para você mesmo quando olhar para trás neste projeto no futuro.**
 
 
 
