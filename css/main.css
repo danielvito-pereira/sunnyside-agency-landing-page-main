@@ -221,7 +221,6 @@ body {
 }
 
 .main {
-  background-color: red;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -380,6 +379,10 @@ body {
 .footer .central .footer-menu .a {
   color: var(--Darkdesaturatedcyan);
   padding: 0em 1em 0em 1em;
+  transition: all 0.5ms ease;
+}
+.footer .central .footer-menu .a:hover {
+  color: var(--white);
 }
 .footer .central .redes {
   display: flex;
@@ -389,6 +392,13 @@ body {
 }
 .footer .central .redes .a {
   padding: 1em;
+  transition: all 1s ease-out;
+}
+.footer .central .redes .a svg {
+  fill: #2C7566;
+}
+.footer .central .redes .a svg:hover {
+  fill: var(--white) !important;
 }
 
 @media screen and (max-width: 988px) {

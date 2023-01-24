@@ -34,7 +34,6 @@
     flex-flow: column nowrap;
     &::after{
       content:url(../src/images/icon-arrow-down.svg);
-
       margin-top: 12%;
     }
   }
@@ -85,7 +84,6 @@
   justify-content:space-between;
 }
 .main{
-  background-color:red;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -241,6 +239,11 @@
       .a{
         color: var( --Darkdesaturatedcyan);
         padding: 0em 1em 0em 1em;
+        transition: all .5ms ease;
+        &:hover{
+          color: var(--white);
+
+        }
       }
     }
     .redes{
@@ -250,6 +253,14 @@
       justify-content: center;
       .a{
         padding: 1em;
+        transition: all 1s ease-out;
+        svg{
+          fill:#2C7566;
+          &:hover{
+            fill: var(--white) !important;
+          }
+        }
+
       }
     }
   }
