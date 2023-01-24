@@ -13,7 +13,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Desenvolvimento contínuo](#Desenvolvimento-contínuo)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -49,7 +48,6 @@ Para ver como você pode adicionar trechos de código, veja abaixo:
 
 Use esta seção para delinear as áreas nas quais você deseja continuar focando em projetos futuros. Podem ser conceitos com os quais você ainda não está totalmente confortável ou técnicas que você achou úteis e que deseja refinar e aperfeiçoar.
 
-**Observação: exclua esta observação e o conteúdo desta seção e substitua por seus próprios planos para o desenvolvimento contínuo.**
 
 
 
